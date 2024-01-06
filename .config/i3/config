@@ -76,7 +76,8 @@ assign [class="Chromium"] 2
 assign [class="firefox"] 2
 assign [class="Tor Browser"] 2
 assign [class="VirtualBox Manager"] 4
-# assign [class="Steam"] 4
+assign [class="VirtualBox"] 4
+assign [class="steam"] 4
 assign [class="TelegramDesktop"] 4
 assign [class="Renoise"] 5
 assign [class="VirtualBox Machine"] 5
@@ -86,12 +87,12 @@ assign [class="openmw-launcher"] 5
 assign [class="openmw"] 5
 assign [class="Nsxiv"] 5
 assign [class="mpv"] 5
+assign [class="vlc"] 5
 assign [all] 6
 
-no_focus [class="Steam"]
+for_window [all class="^(?!steam)"] focus
 
-for_window [all class="^(?!Steam)"] focus
-
+no_focus [class="steam"]
 
 # for_window [class="Alacritty"] focus
 # for_window [class="Chromium"] focus
@@ -108,10 +109,13 @@ for_window [all class="^(?!Steam)"] focus
 for_window [class="Chromium"] layout tabbed
 for_window [class="firefox"] layout tabbed
 for_window [class="Tor Browser"] layout tabbed
-for_window [class="Steam"] floating enable
+for_window [class="TelegramDesktop"] layout tabbed
+for_window [class="steam"] layout tabbed
+# for_window [class="steam"] floating enable
 for_window [class="dota2"] fullscreen enable
 
-for_window [class="Steam" title="Friends List"] resize shrink width 30 px or 30 ppt
+for_window [class="steam" title="^Steam$"] splith
+for_window [class="steam" title="Friends List"] resize shrink width 30 px or 30 ppt
 # for_window [class="Steam" title="^Steam$"] splith
 
 # for_window [class="^Steam$" title="^Friends$"] floating enable
