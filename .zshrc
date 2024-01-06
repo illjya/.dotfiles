@@ -66,6 +66,10 @@ exit_zsh() { exit }
 zle -N exit_zsh
 bindkey '^D' exit_zsh
 
+# https://superuser.com/questions/983016/zsh-delete-keybinding
+# https://bbs.archlinux.org/viewtopic.php?pid=201942#p201942
+bindkey "\e[3~" delete-char
+
 # vi mode
 export KEYTIMEOUT=1
 
@@ -144,5 +148,10 @@ ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
 ZSH_HIGHLIGHT_STYLES[cursor]=bg=white
 ZSH_HIGHLIGHT_STYLES[root]=fg=red,bold
 ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=yellow,underline
-ZSH_HIGHLIGHT_PATTERNS+=('sudo' fg=red,bold)
+# ZSH_HIGHLIGHT_PATTERNS+=('sudo' fg=red,bold)
+ZSH_HIGHLIGHT_REGEXP+=('^sudo(edit)?' fg=red,bold)
 # ZSH_HIGHLIGHT_STYLES[region]=fg=blue
+
+
+# Load Angular CLI autocompletion.
+# source <(ng completion script)
