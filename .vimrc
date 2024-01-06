@@ -60,7 +60,7 @@ call plug#end()
 
 " fzf
 nmap <C-n> :FZF<CR>
-nmap <C-A> :Windows<CR>
+" nmap <C-A> :Windows<CR>
 
 let g:fzf_action = {
       \ 'ctrl-t': 'tab split',
@@ -140,3 +140,7 @@ let g:gruvbox_contrast_dark = 'hard'
 
 colorscheme gruvbox
 set background=dark
+
+hi Search ctermfg=LightYellow
+" hi CurSearch ctermbg=Yellow
+hi link CurSearch IncSearch
