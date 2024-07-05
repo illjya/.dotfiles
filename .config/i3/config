@@ -244,7 +244,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # screenshots
-bindsym F12 exec --no-startup-id maim $HOME/Pictures/Screenshot_$(date +"%Y-%m-%d_%H:%M:%S:%N").png
+bindsym Print exec --no-startup-id maim $HOME/Pictures/Screenshot_$(date +"%Y-%m-%d_%H:%M:%S:%N").png
 bindsym shift+F12 exec --no-startup-id maim --select $HOME/Pictures/Screenshot_$(date +"%Y-%m-%d_%H:%M:%S:%N").png
 
 bindsym $mod+Escape exec --no-startup-id loginctl lock-session
