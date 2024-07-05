@@ -40,7 +40,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork \
         --ignore-empty-password \
         --image $HOME/.config/i3lock/background.png \
-        --ind-pos="40:1100" \
+        --ind-pos="30:1050" \
         --radius=13 \
         --ring-width=2 \
         --ring-color=ffffff66 \
