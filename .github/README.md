@@ -17,6 +17,9 @@
   - `:PlugUpdate`
   - `:PlugInstall`
 
+### Install [lsp servers](https://wiki.archlinux.org/title/Language_Server_Protocol)
+`sudo pacman -S python-lsp-server lua-language-server typescript-language-server vscode-html-languageserver vscode-css-languageserver vscode-json-languageserver`
+
 ## Shell
 
  - [nvimserver](https://github.com/illjya/nvimserver)
