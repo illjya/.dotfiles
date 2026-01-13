@@ -29,8 +29,20 @@ sudo pacman -S \
 ```
 
 ## Shell
+- [nvimserver](https://github.com/illjya/nvimserver)
+- [nsxiv-rifle](https://codeberg.org/nsxiv/nsxiv-extra/src/branch/master/scripts/nsxiv-rifle)
+  - [Sorting](https://codeberg.org/nsxiv/nsxiv-extra/src/branch/master/scripts/nsxiv-rifle#sorting)
+  - Open only passed files
+    ```diff
+    - if [ -n "$count" ]; then
+    + if [ -n "$count" ] && [ "$#" -eq 0 ]; then
+    ```
+  - Play animation
+    ```diff
+    - nsxiv -i -n "${count%%:*}" "$@" < "$tmp"
+    + nsxiv -i -a -n "${count%%:*}" "$@" < "$tmp"
+    ```
 
- - [nvimserver](https://github.com/illjya/nvimserver)
 
 ## Desktop entries
 
