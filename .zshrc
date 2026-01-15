@@ -58,7 +58,7 @@ bindkey -M menuselect "${terminfo[kcbt]}" reverse-menu-complete
 
 # https://superuser.com/q/1498187
 # https://stackoverflow.com/a/61538253
-bindkey -M menuselect '^M' .accept-line
+# bindkey -M menuselect '^M' .accept-line
 
 # ctrl-d fix
 # https://wiki.archlinux.org/title/zsh#Shortcut_to_exit_shell_on_partial_command_line
