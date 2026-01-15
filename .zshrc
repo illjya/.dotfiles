@@ -40,6 +40,10 @@ alias rm='rm -i'
 alias sudo='sudo '
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias llama="ollama run llama3"
+alias deepseek="ollama run deepseek-r1"
+alias gemma="ollama run gemma3"
+
 # keys
 bindkey '^j' down-line-or-history
 bindkey '^k' up-line-or-history
