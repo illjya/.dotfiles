@@ -7,3 +7,9 @@ export FZF_DEFAULT_COMMAND='fd --type f  -H -E '.git' --strip-cwd-prefix'
 # pass
 # The default password length if the pass-length parameter to generate is unspecified.
 export PASSWORD_STORE_GENERATED_LENGTH=16
+
+# npm
+# https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+# https://wiki.archlinux.org/title/Node.js#Node_Packaged_Modules
+# https://stackoverflow.com/a/59227497
+export PATH=~/.local/bin:$PATH
